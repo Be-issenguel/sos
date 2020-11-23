@@ -48,11 +48,24 @@ Route::post('/iniciar', 'CampanhaController@store');
 
 Route::get('/painel','HomeController@index')->name('home');
 
-Route::get('campanhas','CampanhaController@index');
+Route::group(['middleware' => ['auth']], function () {
+    Route::prefix('admin')->group(function(){
+        Route::get('campanhas','CampanhaController@index');
+        Route::get('aceitarcampanha/{id}', 'CampanhaController@aceitar');
+        Route::get('interrompercampanha/{id}', 'CampanhaController@interromper');
+        Route::get('doacoes','DoacaoController@index');
+        Route::get('eliminarcampanha/{id}','CampanhaController@destroy');
+        Route::get('eliminarutilizador/{id}','UserController@destroy');
+        Route::get('utlizadores','UserController@index');
+    });
 
-Route::get('doacoes','DoacaoController@index');
+});
 
-Route::get('utlizadores','UserController@index');
+Route::group(['middleware' => 'guest'], function(){
+    Route::get('campanhas', 'CampanhaController@campanhas');
+});
+
+
 
 Route::get('doacao/{id}','DoacaoController@show');
 

@@ -10,13 +10,15 @@
                         <div class="row">
                             <div class="col-lg-9">
                                 <div class="slider_text ">
-                                    <h3> <span class="site-color">NÃO DEIXE</span> que a pobreza se transforme em paisagem</h2>
-                                    <h4 style="color: white">Modificar a comunidade não precisa de grandes passos, só
-                                        precisa de
-                                        iniciativa...</h4>
-                                    <a href="{{ route('sos') }}" class="boxed-btn3">Iniciar SOS</a>
-                                    <a href="#" data-target="#mdl-doacao-directa" data-toggle="modal"
-                                        class="boxed-btn3">Doe Agora</a>
+                                    <h3> <span class="site-color">NÃO DEIXE</span> que a pobreza se transforme em
+                                        paisagem</h2>
+                                        <h4 style="color: white">Modificar a comunidade não precisa de grandes passos,
+                                            só
+                                            precisa de
+                                            iniciativa...</h4>
+                                        <a href="{{ route('sos') }}" class="boxed-btn3">Iniciar SOS</a>
+                                        <a href="#" data-target="#mdl-doacao-directa" data-toggle="modal"
+                                            class="boxed-btn3">Doe Agora</a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +124,7 @@
                     @forelse ($campanhas as $campanha)
                     <div class="single_cause">
                         <div class="thumb">
-                            <img src="{{ asset("storage/$campanha->imagem") }}" alt="">
+                            <img src="{{ asset("img/uploads/campanhas/$campanha->imagem") }}" alt="">
                         </div>
                         <div class="causes_content">
                             <div class="custom_progress_bar">

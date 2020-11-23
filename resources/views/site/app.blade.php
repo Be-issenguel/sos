@@ -85,6 +85,7 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="{{ route('principal') }}">home</a></li>
+                                        <li><a href="{{ action('CampanhaController@campanhas') }}">campanhas</a></li>
                                         <li><a href="{{ route('faqs') }}">SOS FAQ´s</a></li>
                                         <li><a href="#">como funciona <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">

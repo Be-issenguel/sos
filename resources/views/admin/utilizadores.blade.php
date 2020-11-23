@@ -15,11 +15,10 @@
         <table id="example1" class="table table-bordered table-striped">
           <thead>
             <tr>
-              <th>Titulo</th>
-              <th>Categoria</th>
-              <th>Província</th>
-              <th>Status</th>
-              <th>Valor Esperado</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Data Registo</th>
               <th>{{ __('Opções')}}</th>
             </tr>
           </thead>
@@ -30,10 +29,10 @@
               <td>{{ $utilizador->email }}</td>
               <td>{{ $utilizador->phone }}</td>
               <td>{{ $utilizador->created_at }}</td>
-              <td class="text-right">{{ $utilizador->valor_esperado }}</td>
               <td>
-                <a href="#" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></a>
-                <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-alt"></i></a>
+                {{-- <a href="#" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></a> --}}
+                <a href="{{ action('UserController@destroy',['id' => $utilizador->id])}}"
+                  class="btn btn-danger btn-xs">remover</a>
               </td>
             </tr>
             @endforeach
@@ -41,11 +40,10 @@
           </tbody>
           <tfoot>
             <tr>
-              <th>Titulo</th>
-              <th>Categoria</th>
-              <th>Província</th>
-              <th>Status</th>
-              <th>Valor Esperado</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Telefone</th>
+              <th>Data Registo</th>
               <th>{{ __('Opções')}}</th>
             </tr>
           </tfoot>

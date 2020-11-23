@@ -38,6 +38,7 @@
           <span>Campanhas</span></a></li>
       <li><a href="{{ action('DoacaoController@index') }}"><i class="fa fa-donate"></i> <span>Doações</span></a></li>
       <li><a href="{{ action('UserController@index') }}"><i class="fa fa-users"></i> <span>Utilizadores</span></a></li>
+      <li><a href="{{ action('SiteController@index') }}"><i class="fa fa-globe"></i> <span>Site</span></a></li>
     </ul>
     @endif
     @show

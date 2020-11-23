@@ -34,8 +34,15 @@
               <td class="text-right">{{ $campanha->valor_esperado . __(' AKZ') }}</td>
               <td class="text-right">{{ $campanha->valor_arrecadado . __(' AKZ') }}</td>
               <td>
-                <a href="#" class="btn btn-success btn-xs"><i class="fa fa-eye"></i></a>
-                <a href="#" class="btn btn-danger btn-xs"><i class="fa fa-trash-alt"></i></a>
+                @if ($campanha->status == 'pendente')
+                <a href="{{ action('CampanhaController@aceitar',['id' => $campanha->id]) }}"
+                  class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i></a>
+                <a href="{{ action('CampanhaController@destroy',['id' => $campanha->id]) }}"
+                  class="btn btn-danger btn-xs"><i class="fa fa-trash-alt"></i></a>
+                @else
+                <a href="{{ action('CampanhaController@interromper',['id' => $campanha->id]) }}"
+                  class="btn btn-warning">interromper</a>
+                @endif
               </td>
             </tr>
             @endforeach
@@ -48,6 +55,7 @@
               <th>Província</th>
               <th>Status</th>
               <th>Valor Esperado</th>
+              <th>Valor Arrecadado</th>
               <th>{{ __('Opções')}}</th>
             </tr>
           </tfoot>
@@ -58,4 +66,5 @@
     <!-- /.box -->
   </div>
 </div>
+@include('modals.adm')
 @endsection

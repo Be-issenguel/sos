@@ -21,7 +21,7 @@ class DoacaoController extends Controller
      */
     public function index()
     {
-        return view('admin.doacoes')->withDoacoes(Doacao::where('campanha_id','!=',null));
+        return view('admin.doacoes')->withDoacoes(Doacao::where('campanha_id','!=',null)->get());
     }
 
     /**
@@ -54,9 +54,11 @@ class DoacaoController extends Controller
         }
         $doacao = new Doacao();
         $doacao->utente_id = $utente->id;
-        $doacao->campanha_id = isset($request->campanha)?$request->campanha:null;        
-        $path = $request->file('talao')->store('public');
-        $doacao->talao = explode('/',$path)[1];
+        $doacao->campanha_id = isset($request->campanha)?$request->campanha:null;
+        $fileUpload = $request->file('talao');
+        $filename = str_random().'.'.$fileUpload->extension();
+        $fileUpload->storeAs('doacoes',$filename,'uploads');
+        $doacao->talao = $filename;
         $doacao->save();
         return back();
     }
@@ -121,6 +123,9 @@ class DoacaoController extends Controller
                 $doacao->save();
                 $campanha = Campanha::find($doacao->campanha_id);
                 $campanha->valor_arrecadado += $doacao->valor;
+                if($campanha->valor_esperado >= ($campanha->valor_arrecadado + $doacao->valor)){
+                    $campanha->status = 'terminado';
+                }
                 $campanha->save();
                 return redirect('doacoes')->with('message-success', 'Doação Aceita Com Succeso!');
             }

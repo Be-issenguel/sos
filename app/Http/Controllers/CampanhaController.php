@@ -20,6 +20,29 @@ class CampanhaController extends Controller
         return view('admin.campanhas')->withCampanhas(Campanha::all());
     }
 
+    public function campanhas()
+    {
+        $campanhas = campanha::where('status', 'aceito')->get();
+        return view('site.campanhas')->withCampanhas($campanhas);
+    }
+
+
+    public function aceitar($id)
+    {
+        $campanha = Campanha::find($id);
+        $campanha->status = 'aceito';
+        $campanha->save();
+        return back();
+    }
+
+    public function interromper($id)
+    {
+        $campanha = Campanha::find($id);
+        $campanha->status = 'pendente';
+        $campanha->save();
+        return back();
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -52,10 +75,16 @@ class CampanhaController extends Controller
         $campanha->descricao = $request->descricao;
         $campanha->provincia = $request->provincia;
         $campanha->valor_esperado = $request->valor;
-        $path = $request->file('imagem_do_projecto')->store('public');
-        $campanha->imagem = explode('/',$path)[1];
-        $path = $request->file('imagem_do_documento')->store('public');
-        $campanha->doc_identificacao = explode('/',$path)[1];
+        //Salvar a imagem do projecto
+        $fileUpload = $request->file('imagem_do_projecto');
+        $filename = str_random().'.'.$fileUpload->extension();
+        $fileUpload->storeAs('/campanhas',$filename, 'uploads');
+        $campanha->imagem = $filename;
+        //Salvar a imagem do documento
+        $fileUpload = $request->file('imagem_do_documento');
+        $filename = str_random().'.'.$fileUpload->extension();
+        $fileUpload->storeAs('/campanhas',$filename, 'uploads');
+        $campanha->doc_identificacao = $filename;
         $campanha->save();
         return redirect('home');
     }
@@ -102,6 +131,7 @@ class CampanhaController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Campanha::destroy($id);
+        return back();
     }
 }

@@ -16,7 +16,8 @@
       <div class="icon">
         <i class="fa fa-hands-helping"></i>
       </div>
-      <a href="#" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="{{ action('CampanhaController@index') }}" class="small-box-footer">Mais Informações <i
+          class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <!-- ./col -->
@@ -31,7 +32,8 @@
       <div class="icon">
         <i class="fa fa-donate"></i>
       </div>
-      <a href="#" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="{{ action('DoacaoController@index') }}" class="small-box-footer">Mais Informações <i
+          class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <!-- ./col -->
@@ -46,7 +48,8 @@
       <div class="icon">
         <i class="ion ion-person-add"></i>
       </div>
-      <a href="#" class="small-box-footer">Mais Informações <i class="fa fa-arrow-circle-right"></i></a>
+      <a href="{{ action('UserController@index') }}" class="small-box-footer">Mais Informações <i
+          class="fa fa-arrow-circle-right"></i></a>
     </div>
   </div>
   <!-- ./col -->

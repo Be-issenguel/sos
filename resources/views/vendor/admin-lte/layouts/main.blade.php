@@ -89,7 +89,7 @@
               if(status == "success"){
                 $("#mdl-ver-doacao-nome").text(doacao[0].nome);
                 $("#mdl-ver-doacao-email").text(doacao[0].email);
-                var src = "{{ asset('storage') }}" +"/"+ doacao[0].talao;
+                var src = "{{ asset('img/uploads/doacoes') }}" +"/"+ doacao[0].talao;
                 $("#mdl-ver-doacao-talao").attr("src",src);
                 $("#mdl-ver-doacao").modal();
               }

@@ -8,6 +8,6 @@ use App\Campanha;
 class SiteController extends Controller
 {
     public function index(){
-        return view('site/home')->withCampanhas(Campanha::all());
+        return view('site/home')->withCampanhas(Campanha::where('status','aceito')->get());
     }
 }

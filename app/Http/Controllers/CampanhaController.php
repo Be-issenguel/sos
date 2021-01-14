@@ -134,4 +134,9 @@ class CampanhaController extends Controller
         Campanha::destroy($id);
         return back();
     }
+
+    public function detalhes($id)
+    {
+        return view('admin.detalhes')->withCampanha(Campanha::find($id));
+    }
 }

@@ -24,7 +24,7 @@ class CampanhaRequest extends FormRequest
     public function rules()
     {
         return [
-            'valor' => 'required',
+            'valor' => 'required|digits:14',
             'titulo' => 'required',
             'numero_de_identficacao' => 'required',
             'imagem_do_documento' => 'required',
@@ -38,6 +38,7 @@ class CampanhaRequest extends FormRequest
             'required' => 'O campo :attribute é obrigatório',
             'min' => 'O campo :attribute deve ter no mínimo 5 caracteres',
             'mimes' => 'O campo :attribute dever ter os formatos (jpeg,jpg ou png)',
+            'digits' => 'O campo :attribute deve ser um número com menos de 14 digitos'
         ];
     }
 }

@@ -57,6 +57,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('eliminarcampanha/{id}','CampanhaController@destroy');
         Route::get('eliminarutilizador/{id}','UserController@destroy');
         Route::get('utlizadores','UserController@index');
+        Route::get('campanha/detalhes/{id}', 'CampanhaController@detalhes');
     });
 
 });

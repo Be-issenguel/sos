@@ -26,8 +26,8 @@ class CreateCampanhasTable extends Migration
             $table->string('doc_identificacao');
             $table->string('imagem');
             $table->enum('status',['pendente','aceito','terminado'])->default('pendente');
-            $table->double('valor_esperado',14,2);
-            $table->double('valor_arrecadado',14,2)->default(0);
+            $table->decimal('valor_esperado',16,2);
+            $table->decimal('valor_arrecadado',16,2)->default(0);
             $table->foreign('user_id')
                 ->references('id')
                 ->on('users')

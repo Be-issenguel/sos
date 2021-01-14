@@ -39,12 +39,12 @@
                   class="btn btn-success btn-xs"><i class="fa fa-thumbs-up"></i></a>
                 <a href="{{ action('CampanhaController@destroy',['id' => $campanha->id]) }}"
                   class="btn btn-danger btn-xs"><i class="fa fa-trash-alt"></i></a>
-                <a href="{{ action('CampanhaController@detalhes',['id' => $campanha->id]) }}"
-                  class="btn btn-info btn-xs"><i class="fa fa-eye"></i></a>
                 @else
                 <a href="{{ action('CampanhaController@interromper',['id' => $campanha->id]) }}"
                   class="btn btn-warning">interromper</a>
                 @endif
+                <a href="{{ action('CampanhaController@detalhes',['id' => $campanha->id]) }}"
+                  class="btn btn-info btn-xs"><i class="fa fa-eye"></i></a>
               </td>
             </tr>
             @endforeach

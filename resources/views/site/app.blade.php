@@ -45,10 +45,10 @@
                     <div class="row">
                         <div class="col-xl-6 col-md-12 col-lg-8">
                             <div class="short_contact_list">
-                                <ul>
+                                {{-- <ul>
                                     <li><a href="#"> <i class="fa fa-phone"></i> +244 936 813 330</a></li>
                                     <li><a href="#"> <i class="fa fa-envelope"></i>mnuena@htomail.com</a></li>
-                                </ul>
+                                </ul> --}}
                             </div>
                         </div>
                         <div class="col-xl-6 col-md-6 col-lg-4">

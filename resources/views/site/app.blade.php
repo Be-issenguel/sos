@@ -57,13 +57,13 @@
                                     <i class="fa fa-facebook"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                                <a href="#">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                                 <a href="#">
-                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-whatsapp"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
                                 </a>
                             </div>
                         </div>
@@ -86,7 +86,6 @@
                                     <ul id="navigation">
                                         <li><a href="{{ route('principal') }}">home</a></li>
                                         <li><a href="{{ action('CampanhaController@campanhas') }}">campanhas</a></li>
-                                        <li><a href="{{ route('faqs') }}">SOS FAQ´s</a></li>
                                         <li><a href="#">como funciona <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="{{ route('comofunciona') }}">Como Funciona a SOS</a></li>
@@ -128,7 +127,7 @@
         <div class="footer_top">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-md-6 col-lg-4 ">
+                    <div class="col-xl-5 col-md-6 col-lg-4 ">
                         <div class="footer_widget">
                             <div class="footer_logo">
                                 <a href="#">
@@ -180,19 +179,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Contactos
-                            </h3>
-                            <div class="contacts">
-                                <p>+244 936 813 330 <br>
-                                    mnuena@htomail.com <br>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-md-6 col-lg-3">
+                    <div class="col-xl-5 col-md-6 col-lg-3">
                         <div class="footer_widget">
                             <h3 class="footer_title">
                                 Top De Notícias

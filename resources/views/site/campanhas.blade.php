@@ -22,7 +22,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single_cause">
                     <div class="thumb">
-                        <img src="{{ asset("storage/$campanha->imagem") }}" alt="">
+                        <img src="{{ asset("img/uploads/campanhas/$campanha->imagem") }}" alt="">
                     </div>
                     <div class="causes_content">
                         <div class="custom_progress_bar">

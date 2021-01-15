@@ -24,7 +24,7 @@
                 <div class="blog_left_sidebar">
                     <article class="blog_item">
                         <div class="blog_item_img">
-                            <img class="card-img rounded-0" src="{{ asset("storage/$campanha->imagem") }}" alt="">
+                            <img class="card-img rounded-0" src="{{ asset("img/uploads/campanhas/$campanha->imagem") }}" alt="">
                         </div>
                         <div class="blog_details">
                             <div class=" border-bottom">

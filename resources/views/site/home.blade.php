@@ -84,10 +84,10 @@
                             <div class="section_title mb-20">
                                 <h3><span>Quem Somos?</span></h3>
                             </div>
-                            <p>A vaquinha SOS é uma organização que tem como missão apoiar iniciativas de combate à
+                            <p style="text-align: justify;text-justify: inter-word;">A vaquinha SOS é uma organização que tem como missão apoiar iniciativas de combate à
                                 pobreza, através de projectos sociais (sustentáveis), e também por meio do fomento ao
                                 financiamento desses mesmos projectos, contribuindo assim para o desenvolvimento
-                                sustentável do país. Somos a ponte entre quem precisa de ajuda e quem deseja mudar vidas
+                                sustentável do país. Somos a ponte entre quem precisa de ajuda e quem deseja mudar vidas.
                             </p>
                         </div>
                     </div>
@@ -96,9 +96,9 @@
                             <div class="section_title mb-20">
                                 <h3><span>Como Mudamos Vidas?</span></h3>
                             </div>
-                            <p>Pessoas individuais ou colectivas (pode ser você), enviam-nos projectos de forte impacto
+                            <p style="text-align: justify;text-justify: inter-word;">Pessoas individuais ou colectivas (pode ser você), enviam-nos projectos de forte impacto
                                 social. Após aprovação do projecto, nós os disponibilizamps no site para que as pessoas
-                                possam fazer doações</p>
+                                possam fazer doaçõe.s</p>
                         </div>
                     </div>
                 </div>
@@ -234,7 +234,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel" style="color: #00E676">Fazer Doação</h5>
+                <h5 class="modal-title" id="staticBackdropLabel" style="color: #00E676">VAQUINHA SOS PRESTACAO DE SERV SU LD</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -250,7 +250,7 @@
                     <h6 style="color: #00E676">IBAN</h6>
                 </div>
                 <div class="row justify-content-center border-bottom">
-                    <h6>0000.0000.0000.0000</h6>
+                    <h6>0055.0000.0189.3617.1011.1</h6>
                 </div>
                 <form action="{{ action('DoacaoController@store') }}" method="POST" enctype="multipart/form-data">
                     @csrf

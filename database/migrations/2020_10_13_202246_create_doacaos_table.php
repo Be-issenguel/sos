@@ -18,7 +18,7 @@ class CreateDoacaosTable extends Migration
             $table->integer('utente_id')->unsigned();
             $table->integer('campanha_id')->unsigned()->nullable();
             $table->integer('user_id')->unsigned()->nullable();
-            $table->float('valor')->default(0);
+            $table->float('valor',16,2)->default(0);
             $table->string('talao');
             $table->enum('status',['pendente','aceita'])->default('pendente');
             $table->foreign('utente_id')

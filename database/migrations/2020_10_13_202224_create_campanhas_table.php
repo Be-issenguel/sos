@@ -18,7 +18,6 @@ class CreateCampanhasTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->integer('admin_id')->unsigned()->nullable();
             $table->string('titulo');
-            $table->string('objectivo');
             $table->string('categoria');
             $table->string('ndi');
             $table->text('descricao');

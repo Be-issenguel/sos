@@ -73,7 +73,6 @@ class CampanhaController extends Controller
         $campanha = new Campanha();
         $campanha->user_id = Auth::user()->id;
         $campanha->titulo = $request->titulo;
-        $campanha->objectivo = $request->objectivo;
         $campanha->categoria = $request->categoria;
         $campanha->ndi = $request->numero_de_identficacao;
         $campanha->descricao = $request->descricao;

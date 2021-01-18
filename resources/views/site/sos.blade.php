@@ -34,13 +34,6 @@
                             @endif
                         </div>
                         <div class="form-group col-md-12">
-                            <label for="exampleInputPassword1" style="color: #00E676">Para que Fim:</label>
-                            <select class="form-control" name="objectivo" id="exampleFormControlSelect1">
-                                <option value="Saúde">Saúde</option>
-                                <option value="Ambiente">Ambiente</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-12">
                             <label for="exampleInputPassword1" style="color: #00E676">Nº de Documento de
                                 Identificação:</label>
                             <input type="text" placeholder="Nº de Indentificação / NIF / Passaporte"

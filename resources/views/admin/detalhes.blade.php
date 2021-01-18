@@ -17,7 +17,6 @@
 
                     <h4>Titulo: {{ $campanha->titulo }}</h4>
                     <h4>Descrição: {{ $campanha->descricao }}</h4>
-                    <h4>Objectivo: {{ $campanha->objectivo }}</h4>
                     <h4>Categoria: {{ $campanha->categoria }}</h4>
                     <h4>Data de Criação: {{ $campanha->created_at }}</h4>
                     <div>

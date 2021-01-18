@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Campanha;
+use App\Categoria;
 use App\Http\Requests\CampanhaRequest;
 
 class CampanhaController extends Controller
@@ -51,7 +52,8 @@ class CampanhaController extends Controller
     public function create()
     {
         if(Auth::check()){
-            return view('site/sos');
+            $categorias = Categoria::all();
+            return view('site/sos', compact('categorias'));
         }else{
            return redirect('sos_login');
         }

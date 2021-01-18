@@ -63,17 +63,9 @@
                                 <div class="form-group col-md-12">
                                     <label for="exampleInputPassword1" style="color: #00E676">Categoria:</label>
                                     <select class="form-control" name="categoria" id="exampleFormControlSelect1">
-                                        <option value="Acidentes e Emergencias">Acidentes e Emergencias</option>
-                                        <option value="Animais e Pets">Animais e Pets</option>
-                                        <option value="Artes Criativas, Músicas e Cinema">Artes Criativas, Músicas e
-                                            Cinema</option>
-                                        <option value="Bebês, Crianças e Familias">Bebês, Crianças e Familias</option>
-                                        <option value="Educação e Aprendizado">Educação e Aprendizado</option>
-                                        <option value="Medicina, Doenças e Recuperação">Medicina, Doenças e Recuperação
-                                        </option>
-                                        <option value="Missões, Religião e Igrejas">Missões, Religião e Igrejas</option>
-                                        <option value="Serviços e Trabalhos Voluntarios">Serviços e Trabalhos
-                                            Voluntarios</option>
+                                        @foreach ($categorias as $categoria)
+                                        <option value="{{ $categoria->descricao }}">{{ $categoria->descricao }}</option>
+                                        @endforeach
                                         <option value="Outros...">Outros...</option>
                                     </select>
                                 </div>

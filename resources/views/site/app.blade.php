@@ -93,6 +93,12 @@
                                                         sucedido</a></li>
                                             </ul>
                                         </li>
+                                        @auth
+                                        <li><a href="#"
+                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit()">Sair</a>
+                                        </li>
+                                        <form action="{{ route('logout') }}" id="logout-form" method="post">@csrf</form>
+                                        @endauth
                                     </ul>
                                 </nav>
                                 <div class="Appointment">

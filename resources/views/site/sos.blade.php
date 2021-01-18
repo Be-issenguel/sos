@@ -113,11 +113,10 @@
 
                         <div class="col-md-12 pt-3 pb-3 pb-2 mb-2 border-bottom">
 
-                            <label for="sel1"><strong>NOTA:</strong> Ao criar o projecto SOS, estas a concordar com os
-                                termos e condições imposta nesta aplicação. <a
-                                    style="text-decoration: true; color: #10da65;" href="#" data-toggle="modal"
-                                    data-target="#exampleModal">termo_e_políticas click
-                                    aqui...</a></label>
+                            <label for="sel1"><strong>NOTA:</strong> Ao criar o projeto SOS está a concordar com os
+                                <a style="text-decoration: true; color: #10da65;" href="#" data-toggle="modal"
+                                    data-target="#exampleModal">termos e condições</a> impostos nesta aplicação.
+                            </label>
                         </div>
                         <button type="submit" class="btn btn-success btn-block">Criar SOS</button>
                     </form>

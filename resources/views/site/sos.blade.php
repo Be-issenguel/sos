@@ -74,23 +74,9 @@
                                 <div class="form-group col-md-12">
                                     <label for="exampleInputPassword1" style="color: #00E676">Provincia:</label>
                                     <select class="form-control" name="provincia" id="exampleFormControlSelect1">
-                                        <option value="Luanda">Luanda</option>
-                                        <option value="Benguela">Benguela</option>
-                                        <option value="Huanbo">Huanbo</option>
-                                        <option value="Uige">Uige</option>
-                                        <option value="Cabinda">Cabinda</option>
-                                        <option value="Kuando Kubango">Kuando Kubango</option>
-                                        <option value="Lunda Sul">Lunda Sul</option>
-                                        <option value="Lunda Norte">Lunda Norte</option>
-                                        <option value="Bíe">Bíe</option>
-                                        <option value="Kwanza Sul">Kwanza Sul</option>
-                                        <option value="Moxico">Moxico</option>
-                                        <option value="Zaire">Zaire</option>
-                                        <option value="Cunene">Cunene</option>
-                                        <option value="Kwanza Norte">Kwanza Norte</option>
-                                        <option value="Bengo">Bengo</option>
-                                        <option value="Namibe">Namibe</option>
-                                        <option value="Malanje">Malanje</option>
+                                        @foreach ($provincias as $provincia)
+                                        <option value="{{ $provincia->nome }}">{{ $provincia->nome }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

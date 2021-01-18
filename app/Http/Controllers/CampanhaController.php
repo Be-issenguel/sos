@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use App\Campanha;
 use App\Categoria;
+use App\Provincia;
 use App\Http\Requests\CampanhaRequest;
 
 class CampanhaController extends Controller
@@ -53,7 +54,8 @@ class CampanhaController extends Controller
     {
         if(Auth::check()){
             $categorias = Categoria::all();
-            return view('site/sos', compact('categorias'));
+            $provincias = Provincia::all();
+            return view('site/sos', compact('categorias','provincias'));
         }else{
            return redirect('sos_login');
         }

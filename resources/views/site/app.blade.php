@@ -98,8 +98,10 @@
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
                                         @auth
+                                        @can('aceder_painel')
                                         <a href="{{ action('HomeController@index') }}">Painel
                                             Admin</a>
+                                        @endcan
                                         @endauth
                                         @guest
                                         <a href="{{ route('sos_login') }}">Entrar</a>

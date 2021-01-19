@@ -27,7 +27,7 @@ class CampanhaRequest extends FormRequest
             'valor' => 'required|digits:14',
             'titulo' => 'required',
             'numero_de_identficacao' => 'required',
-            'imagem_do_documento' => 'required',
+            'imagem_do_documento' => 'required|mimes:jpeg,jpg,png',
             'imagem_do_projecto' => 'required|mimes:jpeg,jpg,png',
             'descricao' => 'required|min:5',
         ];

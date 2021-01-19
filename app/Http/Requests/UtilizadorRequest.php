@@ -26,9 +26,18 @@ class UtilizadorRequest extends FormRequest
         return [
             'nome' => 'required',
             'sobrenome' => 'required',
-            'email' => 'required',
+            'email' => 'required|email',
             'telefone' => 'required',
-            'password' => 'required'
+            'password' => 'required|min:8'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'required' => 'O campo :attribute é obrigatório',
+            'email' => 'O campo :attribute deve ser um e-mail válido',
+            'min' => 'O campo :attribute deve ter no mínimo 8 careacteres'
         ];
     }
 }

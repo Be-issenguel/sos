@@ -11,6 +11,7 @@
 (object) [ 'title' => 'Home', 'url' => route('home') ]
 ]
 ])
-
+@endsection
 @section('sidebar-menu')
 @include('admin-lte::layouts.main-sidebar.main')
+@endsection

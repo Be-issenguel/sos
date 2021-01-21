@@ -51,9 +51,7 @@
                     <div class="col-md-4">
                         <div class="single-defination">
                             <h4 class="mb-20">NOSSA MISSÃO</h4>
-                            <p>Contribuir para a redução da pobreza em Angola por meio do
-                                fomento ao financiamento
-                                de projectos socio-sustentáveis</p>
+                            <p>Apoiar iniciativas de combate à pobreza</p>
                         </div>
                     </div>
                     <div class="col-md-4">

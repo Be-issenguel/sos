@@ -26,8 +26,8 @@ class UtilizadorRequest extends FormRequest
         return [
             'nome' => 'required',
             'sobrenome' => 'required',
-            'email' => 'required|email',
-            'telefone' => 'required',
+            'email' => 'required|email|unique:users,email',
+            'telefone' => 'required|unique:users,phone',
             'password' => 'required|min:8'
         ];
     }
@@ -37,7 +37,8 @@ class UtilizadorRequest extends FormRequest
         return [
             'required' => 'O campo :attribute é obrigatório',
             'email' => 'O campo :attribute deve ser um e-mail válido',
-            'min' => 'O campo :attribute deve ter no mínimo 8 careacteres'
+            'min' => 'O campo :attribute deve ter no mínimo 8 careacteres',
+            'unique' => 'Já existe um utilizador com este :attribute'
         ];
     }
 }

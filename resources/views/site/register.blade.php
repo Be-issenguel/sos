@@ -18,7 +18,7 @@
                                 <div class="form-group">
                                     <label for="email" style="color: #00E676">Nome:</label>
                                     <input type="text" name="nome" placeholder="Insira o seu primeiro nome"
-                                        class="form-control" id="nome">
+                                        class="form-control" id="nome" value="{{ old('nome') }}">
                                     @if ($errors->has('nome'))
                                     <span class="text-danger">{{ $errors->first('nome') }}</span>
                                     @endif
@@ -28,7 +28,7 @@
                                 <div class="form-group">
                                     <label for="sobrenome" style="color: #00E676">Sobre Nome:</label>
                                     <input type="text" name="sobrenome" placeholder="Insira o seu último nome"
-                                        class="form-control" id="sobrenome">
+                                        class="form-control" id="sobrenome" value="{{ old('sobrenome') }}">
                                     @if ($errors->has('sobrenome'))
                                     <span class="text-danger">{{ $errors->first('sobrenome') }}</span>
                                     @endif
@@ -40,7 +40,7 @@
                                 <div class="form-group">
                                     <label for="email" style="color: #00E676">Email:</label>
                                     <input type="email" name="email" placeholder="Insira o seu endereço de email"
-                                        class="form-control" id="email">
+                                        class="form-control" id="email" value="{{ old('email') }}">
                                     @if ($errors->has('email'))
                                     <span class="text-danger">{{ $errors->first('email') }}</span>
                                     @endif
@@ -50,7 +50,7 @@
                                 <div class="form-group">
                                     <label for="email" style="color: #00E676">Telefone:</label>
                                     <input type="phone" name="telefone" placeholder="Insira o seu nº de telefone"
-                                        class="form-control" id="telefone">
+                                        class="form-control" id="telefone" value="{{ old('telefone') }}">
                                     @if ($errors->has('telefone'))
                                     <span class="text-danger">{{ $errors->first('telefone') }}</span>
                                     @endif

@@ -53,13 +53,16 @@
                         </div>
                         <div class="col-xl-6 col-md-6 col-lg-4">
                             <div class="social_media_links d-none d-lg-block">
-                                <a href="#">
+                                <a href="https://www.facebook.com/Crowdfunding-SOS-Angola-110910907238343/"
+                                    target="blank">
                                     <i class="fa fa-facebook"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsos-vaquinha-98b3671b2%2F&h=AT1st-v02tVro39IybC6R-RaVxELi__YUALw9Lv-JwLKmAwznUlR9NLAsO8_RDjpLLur7_Ajrqo6TSR8esGsUIxfa3r1dTzl8gycjreAWrwFy6RCyYjfge1rFBZqyO3Lwm2ofQ"
+                                    target="blank">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
-                                <a href="#">
+                                <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%2F%3Fphone%3D244945056445%26text%26app_absent%3D0&h=AT1st-v02tVro39IybC6R-RaVxELi__YUALw9Lv-JwLKmAwznUlR9NLAsO8_RDjpLLur7_Ajrqo6TSR8esGsUIxfa3r1dTzl8gycjreAWrwFy6RCyYjfge1rFBZqyO3Lwm2ofQ"
+                                    target="blank">
                                     <i class="fa fa-whatsapp"></i>
                                 </a>
                                 <a href="#">
@@ -150,17 +153,20 @@
                             <div class="socail_links">
                                 <ul>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://www.facebook.com/Crowdfunding-SOS-Angola-110910907238343/"
+                                            target="blank">
                                             <i class="ti-facebook"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsos-vaquinha-98b3671b2%2F&h=AT1st-v02tVro39IybC6R-RaVxELi__YUALw9Lv-JwLKmAwznUlR9NLAsO8_RDjpLLur7_Ajrqo6TSR8esGsUIxfa3r1dTzl8gycjreAWrwFy6RCyYjfge1rFBZqyO3Lwm2ofQ"
+                                            target="blank">
                                             <i class="ti-linkedin"></i>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%2F%3Fphone%3D244945056445%26text%26app_absent%3D0&h=AT1st-v02tVro39IybC6R-RaVxELi__YUALw9Lv-JwLKmAwznUlR9NLAsO8_RDjpLLur7_Ajrqo6TSR8esGsUIxfa3r1dTzl8gycjreAWrwFy6RCyYjfge1rFBZqyO3Lwm2ofQ"
+                                            target="blank">
                                             <i class="fa fa-whatsapp"></i>
                                         </a>
                                     </li>
